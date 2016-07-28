@@ -1,0 +1,154 @@
+html,body{
+	width: 640px;
+	height: 1041px;
+	margin: 0 auto;
+}
+.wrap{
+	position: relative;
+	background: url("../images/bg.jpg") 0 0 no-repeat;
+	height: 100%;
+	background-size: 100%;
+}
+.house{
+	position: absolute;
+	right: 70px;
+	top:30px;
+}
+.smoke{
+	position: absolute;
+	right: 178px;
+	top:15px;
+	animation: smoke 3s infinite;
+}
+.banner{
+	position: absolute;
+	right: 202px;
+	top: 100px;
+	transform-origin:60px top;
+	animation: swing 2s infinite;
+}
+.logo{
+	position: absolute;
+	top:405px;
+	left: 66px;
+	z-index: 1;
+}
+.cow_1{
+	position: absolute;
+	left: 65px;
+	top:280px;
+	z-index: 2;
+	animation:cow 2s;
+}
+.cow_2{
+	position: absolute;
+	right: 110px;
+	top:266px;
+	z-index: 2;
+	animation:cow 2s 0.5s;
+}
+.cow_3{
+	position: absolute;
+	left: 30px;
+	top:607px;
+	z-index: 2;
+	animation:cow 2s 0.8s;
+}
+.cow_4{
+	position: absolute;
+	right: 30px;
+	top:607px;
+	z-index: 2;
+	animation:cow 2s 1.2s;
+}
+.begin-btn{
+	position: absolute;
+	width:371px;
+	height: 118px;
+	left: 120px;
+	bottom:80px;
+}
+@-webkit-keyframes smoke {
+	from { 
+		opacity: 1;
+		transform: translateY(0);
+	 }
+	to {  
+		opacity: 0;
+		transform:translateY(-10px);
+	}
+}
+@-o-keyframes smoke {
+	from { 
+		opacity: 1;
+		transform: translateY(0);
+	 }
+	to {  
+		opacity: 0;
+		transform:translateY(-10px);
+	}
+}
+@-moz-keyframes smoke {
+	from { 
+		opacity: 1;
+		transform: translateY(0);
+	 }
+	to {  
+		opacity: 0;
+		transform:translateY(-10px);
+	}
+}
+@keyframes smoke {
+	from { 
+		opacity: 1;
+		transform: translateY(0);
+	 }
+	to {  
+		opacity: 0;
+		transform:translateY(-10px);
+	}
+}
+@-webkit-keyframes cow {
+	from { 
+		transform: scale(1);
+	 }
+	50% {  
+		transform:scale(1.5); 
+	}
+	to{
+		transform: scale(1);
+	}
+}
+@-o-keyframes cow {
+	from { 
+		transform: scale(1);
+	 }
+	50% {  
+		transform:scale(1.5); 
+	}
+	to{
+		transform: scale(1);
+	}
+}
+@-moz-keyframes cow {
+	from { 
+		transform: scale(1);
+	 }
+	50% {  
+		transform:scale(1.5); 
+	}
+	to{
+		transform: scale(1);
+	}
+}
+@keyframes cow {
+	from { 
+		transform: scale(1);
+	 }
+	50% {  
+		transform:scale(1.5); 
+	}
+	to{
+		transform: scale(1);
+	}
+}
